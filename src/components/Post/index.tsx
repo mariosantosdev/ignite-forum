@@ -31,6 +31,16 @@ export const Post: React.FC<PostProps> = ({ author, content }) => {
           <p key={index}>{paragraph}</p>
         ))}
       </div>
+
+      <form className={styles.commentForm}>
+        <strong>Deixe seu comentário</strong>
+
+        <textarea cols={30} rows={10} placeholder="O que você está pensando?" />
+
+        <footer>
+          <button type="submit">Publicar</button>
+        </footer>
+      </form>
     </article>
   );
 };
