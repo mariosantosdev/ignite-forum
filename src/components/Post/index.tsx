@@ -1,3 +1,4 @@
+import { Avatar } from "../Avatar";
 import { Comment } from "../Comment";
 import styles from "./styles.module.css";
 
@@ -11,8 +12,7 @@ export const Post: React.FC<PostProps> = ({ author, content }) => {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
+          <Avatar
             src="https://github.com/mariosantosdev.png"
             alt="Mário Santos"
           />
